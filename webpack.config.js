@@ -54,6 +54,9 @@ const config = {
   // Developer tool to enhance debugging, source maps
   // http://webpack.github.io/docs/configuration.html#devtool
   devtool: isDebug ? 'source-map' : false,
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
 
   // What information should be printed to the console
   stats: {

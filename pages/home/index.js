@@ -10,14 +10,11 @@
 
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
+import Test from '../../components/Coffee/AddCoffeeControls';
 import s from './styles.css';
 import { title, html } from './index.md';
 
 class HomePage extends React.Component {
-
-  static propTypes = {
-    articles: PropTypes.array.isRequired,
-  };
 
   componentDidMount() {
     document.title = title;
@@ -27,6 +24,11 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Test
+          onConfirm={() => alert('Confirm')}
+          onCancel={() => alert('Canceled')}
+          collaborator="Felipe"
+          collaborators={['Pedro', 'Felipe', 'Léla']} />
         <h4>Articles</h4>
         <ul>
           {this.props.articles.map((article, i) =>
@@ -40,6 +42,10 @@ class HomePage extends React.Component {
     );
   }
 
-}
+};
+
+HomePage.propTypes = {
+  articles: PropTypes.array.isRequired,
+};
 
 export default HomePage;
