@@ -47,6 +47,7 @@
     "highlight.js": "^9.5.0",
     "json-loader": "^0.5.4",
     "markdown-it": "^7.0.0",
+    "material-ui": "^0.15.2",
     "mocha": "^2.5.3",
     "path-to-regexp": "^1.5.3",
     "pixrem": "^3.0.1",
