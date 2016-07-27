@@ -10,7 +10,7 @@
 
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
-import Test from '../../components/Coffee/AddCoffeeControls';
+import CoffeeStockStatus from '../../components/Coffee/CoffeeStockStatus';
 import s from './styles.css';
 import { title, html } from './index.md';
 
@@ -24,11 +24,7 @@ class HomePage extends React.Component {
     return (
       <Layout className={s.content}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <Test
-          onConfirm={() => alert('Confirm')}
-          onCancel={() => alert('Canceled')}
-          collaborator="Felipe"
-          collaborators={['Pedro', 'Felipe', 'Léla']} />
+        <CoffeeStockStatus qtCoffee={3} qtFilter={1} />
         <h4>Articles</h4>
         <ul>
           {this.props.articles.map((article, i) =>

@@ -8,16 +8,19 @@
     "material-ui": "registry:dt/material-ui#0.15.1+20160720000941",
     "mocha": "registry:dt/mocha#2.2.5+20160720003353",
     "path-to-regexp": "registry:dt/path-to-regexp#1.0.3+20160317120654",
-    "webpack": "registry:dt/webpack#1.12.9+20160523035535"
+    "webpack": "registry:dt/webpack#1.12.9+20160724112410"
   },
   "globalDependencies": {
     "classnames": "registry:dt/classnames#0.0.0+20160316155526",
     "fastclick": "registry:dt/fastclick#1.0.3+20160317120654",
+    "firebase": "registry:dt/firebase#2.4.1+20160412125105",
     "history": "registry:dt/history#1.8.0+20160316155526",
+    "material-ui": "registry:dt/material-ui#0.15.1+20160720000941",
     "react": "registry:dt/react#0.14.0+20160720060442",
     "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
     "react-mdl": "registry:dt/react-mdl#0.0.0+20160425154501",
     "react-redux": "registry:dt/react-redux#4.4.0+20160724070751",
+    "react-tap-event-plugin": "registry:dt/react-tap-event-plugin#0.0.0+20160602142434",
     "redux": "registry:dt/redux#3.5.2+20160703092728",
     "whatwg-fetch": "registry:dt/whatwg-fetch#0.0.0+20160524142046"
   }
